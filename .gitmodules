@@ -1,0 +1,3 @@
+[submodule "muzikaloid_backend"]
+	path = muzikaloid_backend
+	url = git@github.com:victorbusta/muzikaloid_backend.git
