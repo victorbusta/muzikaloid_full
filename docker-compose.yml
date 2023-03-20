@@ -12,10 +12,3 @@ services:
       PGDATA: /data/postgres_service
     ports:
       - '5432:5432'
-    healthcheck:
-      test: ["CMD-SHELL", "sh -c 'pg_isready -U ${SQL_USER} -d ${SQL_DB_NAME}'"]
-      interval: 10s
-      retries: 5
-      start_period: 5s
-      timeout: 10s
-
