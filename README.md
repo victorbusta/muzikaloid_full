@@ -19,9 +19,18 @@ To initiate project :
 ```bash
 # clone repo : 
 git clone https://github.com/victorbusta/muzikaloid_full.git
+cd muzikaloid_full
 
 # pull submodules
 git submodule update --init --recursive
 
+# create .env and change content according to your needs
+mv .env.local .env
+mv muzikaloid_backend/.env.local muzikaloid_backend/.env
 
+# start development environment database
+docker compose up
 ```
+To finish setting up the project, please refer to :
++ The [backend](https://github.com/victorbusta/muzikaloid_backend)'s repository and documentation.
++ The [frontend](https://github.com/victorbusta/muzikaloid_frontend)'s repository and documentation.
