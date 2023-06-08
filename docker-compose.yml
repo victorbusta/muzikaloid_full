@@ -1,8 +1,8 @@
 version: '3.8'
 services:
 
-  eshop_db:
-    container_name: eshop_db
+  muzikaloid_db:
+    container_name: muzikaloid_db
     image: postgres:13.5
     restart: always
     environment:
